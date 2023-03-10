@@ -1,0 +1,16 @@
+{
+    "name": "UnityGitHubActionsLogger",
+    "rootNamespace": "UnityGitHubActionsLogger",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
