@@ -1,0 +1,22 @@
+name: Invoke Logger
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: 'Invoke Builder.CallMessage'
+        shell: cmd
+        run: |
+          "C:\Program Files\Unity\Hub\Editor\2022.2.10f1\Editor\Unity.exe" ^
+            -batchmode ^
+            -quit ^
+            -silent-crashes ^
+            -projectPath . ^
+            -logFile - ^
+            -buildTarget Win64 ^
+            -executeMethod "Builder.CallMessage" ^
